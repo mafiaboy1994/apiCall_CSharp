@@ -1,0 +1,17 @@
+C:\Users\ebwri\source\repos\CallingAPI\bin\Debug\net8.0\CallingAPI.exe
+C:\Users\ebwri\source\repos\CallingAPI\bin\Debug\net8.0\CallingAPI.deps.json
+C:\Users\ebwri\source\repos\CallingAPI\bin\Debug\net8.0\CallingAPI.runtimeconfig.json
+C:\Users\ebwri\source\repos\CallingAPI\bin\Debug\net8.0\CallingAPI.dll
+C:\Users\ebwri\source\repos\CallingAPI\bin\Debug\net8.0\CallingAPI.pdb
+C:\Users\ebwri\source\repos\CallingAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\ebwri\source\repos\CallingAPI\obj\Debug\net8.0\CallingAPI.csproj.AssemblyReference.cache
+C:\Users\ebwri\source\repos\CallingAPI\obj\Debug\net8.0\CallingAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ebwri\source\repos\CallingAPI\obj\Debug\net8.0\CallingAPI.AssemblyInfoInputs.cache
+C:\Users\ebwri\source\repos\CallingAPI\obj\Debug\net8.0\CallingAPI.AssemblyInfo.cs
+C:\Users\ebwri\source\repos\CallingAPI\obj\Debug\net8.0\CallingAPI.csproj.CoreCompileInputs.cache
+C:\Users\ebwri\source\repos\CallingAPI\obj\Debug\net8.0\CallingAPI.csproj.Up2Date
+C:\Users\ebwri\source\repos\CallingAPI\obj\Debug\net8.0\CallingAPI.dll
+C:\Users\ebwri\source\repos\CallingAPI\obj\Debug\net8.0\refint\CallingAPI.dll
+C:\Users\ebwri\source\repos\CallingAPI\obj\Debug\net8.0\CallingAPI.pdb
+C:\Users\ebwri\source\repos\CallingAPI\obj\Debug\net8.0\CallingAPI.genruntimeconfig.cache
+C:\Users\ebwri\source\repos\CallingAPI\obj\Debug\net8.0\ref\CallingAPI.dll

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vT7GShRMbAk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ebwri\\source\\repos\\CallingAPI\\CallingAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ebwri\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
