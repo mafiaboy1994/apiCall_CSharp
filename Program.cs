@@ -4,9 +4,16 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
+using Azure.Identity;
+using Azure.ResourceManager;
+using Azure.ResourceManager.Resources;
+using Azure.Core;
 
 
-class program
+
+// REST API Core Calls
+
+/*class program
 {
     static async Task Main(string[] args)
     {
@@ -70,4 +77,39 @@ class program
         }
     }
 
+}*/
+
+// SDK Calls
+
+class program
+{
+    static async Task Main(string[] args)
+    {
+        string clientID = Environment.GetEnvironmentVariable("AZURE_CLIENT_ID");
+        string tenantID = Environment.GetEnvironmentVariable("AZURE_TENANT_ID");
+        string clientSecret = Environment.GetEnvironmentVariable("AZURE_CLIENT_SECRET");
+        string subscriptionID = Environment.GetEnvironmentVariable("AZURE_SUBSCRIPTION_ID");
+
+
+        // Create a client credential using the environment variables
+        var clientSecretCredential = new ClientSecretCredential(tenantID, clientID, clientSecret);
+
+        var armClient = new ArmClient(clientSecretCredential);
+
+        // Get the subscription resource
+        SubscriptionResource subscription = await armClient.GetSubscriptionResource(new ResourceIdentifier($"/subscriptions/{subscriptionID}")).GetAsync();
+
+        Console.WriteLine($"Listing resources in subscription: {subscriptionID}");
+
+        await foreach (var resource in subscription.GetGenericResourcesAsync())
+        {
+            Console.WriteLine($"Resource ID: {resource.Id}");
+            Console.WriteLine($"Resource Name: {resource.Data.Name}");
+            Console.WriteLine($"Resource Type: {resource.Data.ResourceType}");
+            Console.WriteLine(new string('-', 50));
+        }
+
+        Console.ReadLine();
+
+    }
 }
